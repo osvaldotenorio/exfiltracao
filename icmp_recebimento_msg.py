@@ -13,6 +13,7 @@ def process_packet(packet):
 
 def main():
     # Inicie o sniffer
+    # Lembrar de trocar o nome da interface de rede em iface de acordo com a que estiver usando
     sniff(filter="icmp and icmp[icmptype] == 8", prn=process_packet, iface="vmnet8")
 
 if __name__ == "__main__":
