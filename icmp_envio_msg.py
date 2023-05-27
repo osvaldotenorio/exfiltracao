@@ -4,7 +4,7 @@ import argparse
 def main():
     # Cria o parser e adiciona o argumento para o arquivo e ip
     parser = argparse.ArgumentParser(description="Envia um arquivo via ICMP")
-    parser.add_argument("file", help="Nome do arquivo para enviar")
+    parser.add_argument("file", help="Arquivo que contenha a mensagem a ser enviada")
     parser.add_argument("ip", help="Endereço IP de destino")
     args = parser.parse_args()
 
